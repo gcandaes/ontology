@@ -9,6 +9,7 @@ node [shape = rectangle, color="orange"]; "base:Station" "base:Schedule" "base:A
 	"base:has" -> "base:pass_by" [ label = "rdfs:subPropertyOf" ];
 	"base:engine" -> "base:Transportation_Mode" [ label = "rdfs:subPropertyOf" ];
 	"base:capacity" -> "base:Transportation_Mode" [ label = "rdfs:subPropertyOf" ];
+	"owl:topObjectProperty" -> "base:has" [ label = "rdfs:subPropertyOf" ];
 	":R7baIZ1q7EMAPpTa19l2n3W" -> "base:Transportation_Infrastructure" [ label = "base:is_parked" ];
 	"base:bus" -> "base:Schedule" [ label = "base:respect" ];
 	"base:Transportation_Infrastructure" -> "base:Transportation_Service" [ label = "base:offer" ];
