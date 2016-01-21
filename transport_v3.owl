@@ -78,6 +78,14 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#has"/>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
