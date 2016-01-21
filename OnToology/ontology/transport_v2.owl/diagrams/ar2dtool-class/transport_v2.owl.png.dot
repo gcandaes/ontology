@@ -1,0 +1,6 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2" -> "http://webprotege.stanford.edu/project/9dr5pM8Co8PY8MBEaPHdWQ" [ label = "owl:imports" ];
+
+}
