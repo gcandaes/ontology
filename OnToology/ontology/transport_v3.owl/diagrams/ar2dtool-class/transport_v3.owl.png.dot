@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Station" "base:Schedule" "base:Air" "base:Fare" "base:Transportation_Service" "base:bus" "base:Transportation_Infrastructure" ; /*classes style*/
+	"base:Brand" -> "base:Transportation_Mode" [ label = "rdfs:subPropertyOf" ];
+	"http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2" -> "http://webprotege.stanford.edu/project/9dr5pM8Co8PY8MBEaPHdWQ" [ label = "owl:imports" ];
+	"base:mileage" -> "base:Transportation_Mode" [ label = "rdfs:subPropertyOf" ];
+	"base:price" -> "base:Transportation_Mode" [ label = "rdfs:subPropertyOf" ];
+	"base:has" -> "base:pass_by" [ label = "rdfs:subPropertyOf" ];
+	"base:engine" -> "base:Transportation_Mode" [ label = "rdfs:subPropertyOf" ];
+	"base:capacity" -> "base:Transportation_Mode" [ label = "rdfs:subPropertyOf" ];
+	":R7baIZ1q7EMAPpTa19l2n3W" -> "base:Transportation_Infrastructure" [ label = "base:is_parked" ];
+	"base:bus" -> "base:Schedule" [ label = "base:respect" ];
+	"base:Transportation_Infrastructure" -> "base:Transportation_Service" [ label = "base:offer" ];
+	":RDZtqnEInVPXTFWaICPndT5" -> "base:Station" [ label = "base:pass_by" ];
+	":R9OOhyLh2ydAKKdvDBMWJIV" -> "base:Air" [ label = "base:land_in" ];
+	":R7baIZ1q7EMAPpTa19l2n3W" -> "base:Fare" [ label = "base:has" ];
+
+}
