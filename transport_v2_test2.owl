@@ -319,6 +319,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#test3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#test3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Rail"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
