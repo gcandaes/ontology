@@ -1,347 +1,224 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#"
-     xml:base="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2">
-        <owl:imports rdf:resource="http://webprotege.stanford.edu/project/9dr5pM8Co8PY8MBEaPHdWQ"/>
-    </owl:Ontology>
-    
+Prefix(:=<http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+Ontology(<http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2>
+Import(<http://webprotege.stanford.edu/project/9dr5pM8Co8PY8MBEaPHdWQ>)
 
-    
+Declaration(Class(:Aerodrom))
+Declaration(Class(:Air))
+Declaration(Class(:Airfield))
+Declaration(Class(:Airport))
+Declaration(Class(:Aqueduct))
+Declaration(Class(:Boat_house))
+Declaration(Class(:Bridge))
+Declaration(Class(:Bus_station))
+Declaration(Class(:Call_center))
+Declaration(Class(:Center_office))
+Declaration(Class(:Cycleway))
+Declaration(Class(:Driver_safety_training))
+Declaration(Class(:Fare))
+Declaration(Class(:Highway))
+Declaration(Class(:Hush_house))
+Declaration(Class(:Parking))
+Declaration(Class(:Port))
+Declaration(Class(:Rail))
+Declaration(Class(:Railway))
+Declaration(Class(:Rental_vehicle))
+Declaration(Class(:Road))
+Declaration(Class(:Schedule))
+Declaration(Class(:Space))
+Declaration(Class(:Spaceport))
+Declaration(Class(:Station))
+Declaration(Class(:Transportation_Infrastructure))
+Declaration(Class(:Transportation_Service))
+Declaration(Class(:Tunnel))
+Declaration(Class(:Vehicle_accident_procedure))
+Declaration(Class(:Vehicle_maintenance))
+Declaration(Class(:Viaduct))
+Declaration(Class(:Water))
+Declaration(Class(:test))
+Declaration(ObjectProperty(:pass_by))
+Declaration(NamedIndividual(:Bomber))
+Declaration(NamedIndividual(:Glider))
+Declaration(NamedIndividual(:Monoplane))
+Declaration(NamedIndividual(:Seaplane))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#'Fighter_plane'>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#'Scout_plane'>))
+############################
+#   Object Properties
+############################
 
+# Object Property: :pass_by (:pass_by)
 
-    <!-- http://webprotege.stanford.edu/R7baIZ1q7EMAPpTa19l2n3W -->
+ObjectPropertyDomain(:pass_by <http://webprotege.stanford.edu/RDZtqnEInVPXTFWaICPndT5>)
+ObjectPropertyRange(:pass_by :Station)
 
-    <rdf:Description rdf:about="http://webprotege.stanford.edu/R7baIZ1q7EMAPpTa19l2n3W">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
-    
 
+############################
+#   Classes
+############################
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Aerodrom -->
+# Class: <http://webprotege.stanford.edu/R7baIZ1q7EMAPpTa19l2n3W> (Transportation Mode)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Aerodrom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Air"/>
-    </owl:Class>
-    
+SubClassOf(<http://webprotege.stanford.edu/R7baIZ1q7EMAPpTa19l2n3W> owl:Thing)
 
+# Class: :Aerodrom (:Aerodrom)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Air -->
+SubClassOf(:Aerodrom :Air)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Air">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Infrastructure"/>
-    </owl:Class>
-    
+# Class: :Air (:Air)
 
+SubClassOf(:Air :Transportation_Infrastructure)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Airfield -->
+# Class: :Airfield (:Airfield)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Airfield">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Air"/>
-    </owl:Class>
-    
+SubClassOf(:Airfield :Air)
 
+# Class: :Airport (:Airport)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Airport -->
+SubClassOf(:Airport :Air)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Airport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Air"/>
-    </owl:Class>
-    
+# Class: :Aqueduct (:Aqueduct)
 
+SubClassOf(:Aqueduct :Bridge)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Aqueduct -->
+# Class: :Boat_house (:Boat_house)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Aqueduct">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Bridge"/>
-    </owl:Class>
-    
+SubClassOf(:Boat_house :Water)
 
+# Class: :Bridge (:Bridge)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Boat_house -->
+SubClassOf(:Bridge :Water)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Boat_house">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Water"/>
-    </owl:Class>
-    
+# Class: :Bus_station (:Bus_station)
 
+SubClassOf(:Bus_station :Road)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Bridge -->
+# Class: :Call_center (:Call_center)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Bridge">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Water"/>
-    </owl:Class>
-    
+SubClassOf(:Call_center :Transportation_Service)
 
+# Class: :Center_office (:Center_office)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Bus_station -->
+SubClassOf(:Center_office :Transportation_Service)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Bus_station">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Road"/>
-    </owl:Class>
-    
+# Class: :Cycleway (:Cycleway)
 
+SubClassOf(:Cycleway :Road)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Call_center -->
+# Class: :Driver_safety_training (:Driver_safety_training)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Call_center">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service"/>
-    </owl:Class>
-    
+SubClassOf(:Driver_safety_training :Transportation_Service)
 
+# Class: :Fare (:Fare)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Center_office -->
+SubClassOf(:Fare :Transportation_Service)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Center_office">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service"/>
-    </owl:Class>
-    
+# Class: :Highway (:Highway)
 
+SubClassOf(:Highway :Road)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Cycleway -->
+# Class: :Hush_house (:Hush_house)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Cycleway">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Road"/>
-    </owl:Class>
-    
+SubClassOf(:Hush_house :Air)
 
+# Class: :Parking (:Parking)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Driver_safety_training -->
+SubClassOf(:Parking :Road)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Driver_safety_training">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service"/>
-    </owl:Class>
-    
+# Class: :Port (:Port)
 
+SubClassOf(:Port :Water)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Fare -->
+# Class: :Rail (:Rail)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Fare">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service"/>
-    </owl:Class>
-    
+SubClassOf(:Rail :Transportation_Infrastructure)
 
+# Class: :Railway (:Railway)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Highway -->
+SubClassOf(:Railway :Rail)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Highway">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Road"/>
-    </owl:Class>
-    
+# Class: :Rental_vehicle (:Rental_vehicle)
 
+SubClassOf(:Rental_vehicle :Transportation_Service)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Hush_house -->
+# Class: :Road (:Road)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Hush_house">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Air"/>
-    </owl:Class>
-    
+SubClassOf(:Road :Transportation_Infrastructure)
 
+# Class: :Schedule (:Schedule)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Parking -->
+SubClassOf(:Schedule :Transportation_Service)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Parking">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Road"/>
-    </owl:Class>
-    
+# Class: :Space (:Space)
 
+SubClassOf(:Space :Transportation_Infrastructure)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Port -->
+# Class: :Spaceport (:Spaceport)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Port">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Water"/>
-    </owl:Class>
-    
+SubClassOf(:Spaceport :Space)
 
+# Class: :Station (:Station)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Rail -->
+SubClassOf(:Station :Rail)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Rail">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Infrastructure"/>
-    </owl:Class>
-    
+# Class: :Tunnel (:Tunnel)
 
+SubClassOf(:Tunnel :Water)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Railway -->
+# Class: :Vehicle_accident_procedure (:Vehicle_accident_procedure)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Railway">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Rail"/>
-    </owl:Class>
-    
+SubClassOf(:Vehicle_accident_procedure :Transportation_Service)
 
+# Class: :Vehicle_maintenance (:Vehicle_maintenance)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Rental_vehicle -->
+SubClassOf(:Vehicle_maintenance :Transportation_Service)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Rental_vehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service"/>
-    </owl:Class>
-    
+# Class: :Viaduct (:Viaduct)
 
+SubClassOf(:Viaduct :Bridge)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Road -->
+# Class: :Water (:Water)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Road">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Infrastructure"/>
-    </owl:Class>
-    
+SubClassOf(:Water :Transportation_Infrastructure)
 
+# Class: :test (:test)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Schedule -->
+SubClassOf(:test :Rail)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Schedule">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service"/>
-    </owl:Class>
-    
 
+############################
+#   Named Individuals
+############################
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Space -->
+# Individual: :Bomber (:Bomber)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Space">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Infrastructure"/>
-    </owl:Class>
-    
+ClassAssertion(<http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj> :Bomber)
 
+# Individual: :Glider (:Glider)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Spaceport -->
+ClassAssertion(<http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj> :Glider)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Spaceport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Space"/>
-    </owl:Class>
-    
+# Individual: :Monoplane (:Monoplane)
 
+ClassAssertion(<http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj> :Monoplane)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Station -->
+# Individual: :Seaplane (:Seaplane)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Station">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Rail"/>
-    </owl:Class>
-    
+ClassAssertion(<http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj> :Seaplane)
 
+# Individual: <http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#'Fighter_plane'> (<http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#'Fighter_plane'>)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Infrastructure -->
+ClassAssertion(<http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj> <http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#'Fighter_plane'>)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Infrastructure"/>
-    
+# Individual: <http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#'Scout_plane'> (<http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#'Scout_plane'>)
 
+ClassAssertion(<http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj> <http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#'Scout_plane'>)
 
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service"/>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Tunnel -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Tunnel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Water"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Vehicle_accident_procedure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Vehicle_accident_procedure">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Vehicle_maintenance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Vehicle_maintenance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Service"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Viaduct -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Viaduct">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Bridge"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Water -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Water">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Infrastructure"/>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Bomber -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Bomber">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Glider -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Glider">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Monoplane -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Monoplane">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Seaplane -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Seaplane">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#&apos;Fighter_plane&apos; -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#&apos;Fighter_plane&apos;">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#&apos;Scout_plane&apos; -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#&apos;Scout_plane&apos;">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RCacKWgSOxHLl3BZ8k26VOj"/>
-    </owl:NamedIndividual>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
-
+)
