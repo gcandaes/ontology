@@ -1,0 +1,40 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Rental_vehicle" "base:Vehicle_accident_procedure" "base:Call_center" "base:test3" "base:Station" "base:Boat_house" "base:Cycleway" "base:Airfield" "base:Water" "base:Bridge" "base:Center_office" "base:Schedule" "base:Driver_safety_training" "base:Air" "base:Vehicle_maintenance" "base:test2" "base:Aqueduct" "base:Bus_station" "base:Rail" "base:Port" "base:Viaduct" "base:Highway" "base:Fare" "base:Transportation_Service" "base:Tunnel" "base:Spaceport" "base:Aerodrom" "base:Road" "base:Airport" "base:Space" "base:Hush_house" "base:test" "base:Transportation_Infrastructure" "base:Parking" "base:Railway" ; /*classes style*/
+	"base:Hush_house" -> "base:Air" [ label = "rdfs:subClassOf" ];
+	"base:Rental_vehicle" -> "base:Transportation_Service" [ label = "rdfs:subClassOf" ];
+	"base:Aqueduct" -> "base:Bridge" [ label = "rdfs:subClassOf" ];
+	"base:Airport" -> "base:Air" [ label = "rdfs:subClassOf" ];
+	"base:Aerodrom" -> "base:Air" [ label = "rdfs:subClassOf" ];
+	"base:Rail" -> "base:Transportation_Infrastructure" [ label = "rdfs:subClassOf" ];
+	"base:Vehicle_maintenance" -> "base:Transportation_Service" [ label = "rdfs:subClassOf" ];
+	"base:Station" -> "base:Rail" [ label = "rdfs:subClassOf" ];
+	"base:Fare" -> "base:Transportation_Service" [ label = "rdfs:subClassOf" ];
+	"base:Air" -> "base:Transportation_Infrastructure" [ label = "rdfs:subClassOf" ];
+	"base:Highway" -> "base:Road" [ label = "rdfs:subClassOf" ];
+	"base:Bus_station" -> "base:Road" [ label = "rdfs:subClassOf" ];
+	"base:Road" -> "base:Transportation_Infrastructure" [ label = "rdfs:subClassOf" ];
+	"base:Space" -> "base:Transportation_Infrastructure" [ label = "rdfs:subClassOf" ];
+	"base:Boat_house" -> "base:Water" [ label = "rdfs:subClassOf" ];
+	":R7baIZ1q7EMAPpTa19l2n3W" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:Spaceport" -> "base:Space" [ label = "rdfs:subClassOf" ];
+	"base:Parking" -> "base:Road" [ label = "rdfs:subClassOf" ];
+	"base:Cycleway" -> "base:Road" [ label = "rdfs:subClassOf" ];
+	"base:Airfield" -> "base:Air" [ label = "rdfs:subClassOf" ];
+	"base:Port" -> "base:Water" [ label = "rdfs:subClassOf" ];
+	"base:Center_office" -> "base:Transportation_Service" [ label = "rdfs:subClassOf" ];
+	"base:test3" -> "base:Rail" [ label = "rdfs:subClassOf" ];
+	"base:Viaduct" -> "base:Bridge" [ label = "rdfs:subClassOf" ];
+	"base:Tunnel" -> "base:Water" [ label = "rdfs:subClassOf" ];
+	"base:test" -> "base:Rail" [ label = "rdfs:subClassOf" ];
+	"base:Bridge" -> "base:Water" [ label = "rdfs:subClassOf" ];
+	"base:Call_center" -> "base:Transportation_Service" [ label = "rdfs:subClassOf" ];
+	"base:Railway" -> "base:Rail" [ label = "rdfs:subClassOf" ];
+	"base:Schedule" -> "base:Transportation_Service" [ label = "rdfs:subClassOf" ];
+	"base:test2" -> "base:Transportation_Infrastructure" [ label = "rdfs:subClassOf" ];
+	"base:Vehicle_accident_procedure" -> "base:Transportation_Service" [ label = "rdfs:subClassOf" ];
+	"base:Water" -> "base:Transportation_Infrastructure" [ label = "rdfs:subClassOf" ];
+	"base:Driver_safety_training" -> "base:Transportation_Service" [ label = "rdfs:subClassOf" ];
+
+}
