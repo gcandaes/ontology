@@ -15,6 +15,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#pass_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#pass_by">
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RDZtqnEInVPXTFWaICPndT5"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Station"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -279,6 +299,30 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Water">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Rail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#test2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#test2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Transportation_Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#test3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#test3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gautier/ontologies/2015/11/untitled-ontology-2#Rail"/>
     </owl:Class>
     
 
